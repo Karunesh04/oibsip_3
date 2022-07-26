@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Coverter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      data-search-pseudo-elements
+      src="https://kit.fontawesome.com/f737751420.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="index.js"></script>
+    <section class="text-gray-600 body-font">
+      <div
+        class="container px-5 py-24 mx-auto flex flex-wrap items-center"
+        id="parent"
+      >
+        <div
+          class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0"
+          id="card"
+        >
+          <h2 class="text-gray-900 text-2xl font-bold title-font mb-5">
+            <i class="fa-light fa-temperature-list"></i> Temperature Converter
+          </h2>
+          <div class="relative mb-4">
+            <label for="degree" class="leading-7 text-sm text-gray-600"
+              >Degree</label
+            >
+            <br />
+            <input
+              type="number"
+              id="degree"
+              name="degree"
+              class="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+            
+<label for="select" style="display: block;" class="leading-7 text-sm text-gray-600"
+              >Convert To</label
+            >
+            
+            <select id="select" style="display: block;"
+              class="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            >
+              <option>Celsius</option>
+              <option>Fahrenheit</option>
+            </select>
+
+          </div>
+          <div class="relative mb-4">
+            <label for="result" class="leading-7 text-sm text-gray-600"
+              >Result</label
+            >
+            <br />
+            <input
+              type="number"
+              id="result"
+              name="result"
+              class="bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            />
+
+          </div>
+
+          <br />
+          <button onclick="convert()"
+            class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+          >
+            Convert
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
